@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malaysia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <script src="https://kit.fontawesome.com/18257c577b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    align-items: center;
+
+
+}
+.nav-bar{
+    /* margin-bottom: 0px; */
+    
+    
+    display: flex;
+    justify-content: right;
+    background-color: rgb(128, 128, 128,0.7);
+  }
+
+  .nav-bar .lis{
+    position: static;
+    /* background-color: rgb(103, 36, 165,0.7); */
+    padding: 30px;
+    list-style-type: none;
+  }
+  .lis .anchor{
+    
+    color: black;
+    text-decoration: none;
+  }
+  .nav-bar .search-container button {
+    float: right;
+    padding: 6px;
+    margin-left: 5px;
+    margin-right: 5px; 
+    background: #ddd;
+    /* font-size: 17px; */
+    border: none;
+    cursor: pointer;
+  }
+  .nav-bar .search-container button:hover {
+    background: #ccc;
+  }
+  #skyhigh{
+    
+    margin: 20px;
+    position: absolute;
+  }
+
+  .underline{
+    background-color: rgb(78, 71, 71,0.5);;
+  }
+  .nav-bar input[type=text] {
+    border-radius: 15px;
+    padding: 6px;
+    border: 1px solid white  
+  }
+
+
+.main
+{
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+.image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.text h1{
+    font-family: monospace;
+    font-size: 6rem;
+}
+
+.text button
+{
+    text-decoration: none;
+    padding: 12px 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    transition: all ease-in-out o.1s;
+
+}
+.text button:hover
+{
+    color:rgb(255, 111, 0);
+}
+.dest{
+    font-size: 1.2rem;
+    font-family: "Poppins Light";
+    margin-bottom: 40px;
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    padding: 53px;
+
+}
+.item img{
+    width: 100%;
+    height: 400px;
+}.dest h2{
+    padding: 40px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    text-align: center;
+}
+.dest h3{
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.dest a
+{
+    text-decoration: none;
+    color: black;
+    
+}
+.dest a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: black;
+  color: #fefefe;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .heading {
+  color: #fefefe;
+  max-width: 1010px;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+}
+
+.footer .content p {
+  margin-bottom: 1.3rem;
+}
+
+.footer .content a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.footer .content a:hover {
+  border-bottom: 1px solid #971717;
+}
+
+.footer .content h4 {
+  margin-bottom: 1.3rem;
+  font-size: 19px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer hr {
+  margin: 2rem 0;
+}
+
+@media (max-width: 767px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .footer {
+    position: unset;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
+  }
+}
+.hover{
+  text-decoration: underline;
+  
+}
+
+    </style>
+</head>
+<body>
+  <h1 id="skyhigh">SKYHIGH</h1>
+  <ul class="nav-bar">
+    <li class="lis" id="home"><a href="/index.html" class="anchor">Home</a></li>
+    <li class="lis" id="destination">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Destinations
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="/locations/india.html">India</a></li>
+          <li><a class="dropdown-item" href="/locations/Sri lanka.html">Sri lanka</a></li>
+          <li><a class="dropdown-item" href="/locations/nepal.html">Nepal</a></li>
+          <li><a class="dropdown-item" href="/locations/maldives.html">Maldives</a></li>
+          <li><a class="dropdown-item" href="/locations/indonesia.html">Indonesia</a></li>
+          <li><a class="dropdown-item" href="/locations/malasia.html">Malasia</a></li>
+        </ul>
+      </div></a>
+    </li>
+    <li class="lis" id="contact"><a href="/Contact-Us/Contact-Us.html" class="anchor">Contact</a></li>
+    <li class="lis" id="services"><a href="/locations/services.html" class="anchor">Services</a></li>
+    <li class="lis" id="about"><a href="/about/about.html" class="anchor">About us</a></li>
+    <li class="lis" id="loginform"><a href="/loginform.html" class="anchor">Login</a></li>
+
+    <li class="lis"><a href="#" class="anchor">
+        <div class="search-container">
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </a></li>
+  </ul>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script>
+        const navlink = document.querySelectorAll(".lis")
+  navlink.forEach(navlink => {
+    
+    navlink.addEventListener('click',()=>{
+      console.log("Query fiered")
+        document.querySelector('.underline')?.classList.remove('underline');
+        navlink.classList.add('underline');
+    })
+    });
+      </script>
+    <main>
+        <section class="main">
+            <div class="image">
+                <img src="https://wallpapercave.com/wp/wp1842892.jpg" alt="img">
+                <div class="text">
+                    <h1>MALAYSIA</h1>
+                    <a href="/index.html#book-heading"><button>Book Now</button></a>
+                </div>
+
+            </div>
+        </section>
+        <section class="dest">
+            <h2>Popular locations in malaysia</h2>
+            <div class="box">
+                <div class="item">
+                    <img src="https://cdn.kimkim.com/files/a/images/b8922096a0e97ed63b7794a6da2e571d9caf1a76/original-0dba3bfe347289501dc121ccf91aaf49.jpg" alt="">
+                    <a href="https://en.wikipedia.org/wiki/Kuala_Lumpur"><h3>Kuala Lumpur</h3></a>
+                    
+                </div>
+                <div class="item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/f9/79/a9/playa-del-hotel-y-puerto.jpg?w=700&h=-1&s=1" alt="">
+                    <a href="https://en.wikipedia.org/wiki/Perhentian_Islands"><h3>Perhentian Islands</h3></a>
+                    
+                </div>
+                <div class="item">
+                    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/3c/b2.jpg" alt="">
+                   <a href="https://en.wikipedia.org/wiki/Malacca"><h3>Malacca</h3></a>
+                   
+                </div>
+                <div class="item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/9f/b7/98/photo8jpg.jpg?w=700&h=500&s=1" alt="">
+                  <a href="https://en.wikipedia.org/wiki/Penang"><h3>Penang</h3>
+                  </a>  
+                </div>
+                <div class="item">
+                    <img src="https://ik.imgkit.net/3vlqs5axxjf/TW-Asia/ik-seo/uploadedImages/Industry/Destinations(1)/Langkawi-reopens-GettyImages-1326644430/Fully-vaxxed%3F-Get-ready-for-Langkawi%27s-reopening.jpg?tr=w-780%2Ch-440%2Cfo-auto" alt="">
+                   <a href="https://en.wikipedia.org/wiki/Langkawi"> <h3>Langkawi</h3></a>
+                    
+                </div>
+                <div class="item">
+                    <img src="https://www.insideasiatours.com/sites/default/files/2020-10/Bohey%20Dulang%20Semporna%2C%20Sabah%20iStock-497033556-min.jpg" alt="">
+                    <a href="https://en.wikipedia.org/wiki/Borneo"><h3>Borneo</h3></a>
+                    
+                </div>
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Tea_fields_%28Will_Ellis%29.jpg/1200px-Tea_fields_%28Will_Ellis%29.jpg" alt="">
+                   <a href="https://en.wikipedia.org/wiki/Cameron_Highlands"> <h3>Cameron Highlands</h3></a>
+                    
+                </div>
+                <div class="item">
+                    <img src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2020/04/10/7a9d8b16-5933-11ea-b438-8452af50d521_972x_052345.JPG" alt="">
+                    <a href="https://en.wikipedia.org/wiki/Johor_Bahru"><h3>Johor Bahru<h3></a>
+                </div>
+
+            </div>
+        </section>
+        <div class="footer">
+      <div class="heading">
+        <h2>Sky High<sup>™</sup></h2>
+      </div>
+      <div class="content">
+        <div class="services">
+          <h4>Services</h4>
+          <p><a href="#" class="hover">transportation</a></p>
+          <p><a href="#"  class="hover">health care</a></p>indonesia.html
+          <p><a href="#"  class="hover">hotels</a></p>
+          <p><a href="#"  class="hover">food and drinks</a></p>
+          <p><a href="#"  class="hover">guide</a></p>
+          <p><a href="#"  class="hover">Travel</a></p>
+          <p><a href="#"  class="hover">Adventures</a></p>
+        </div>
+        <div class="social-media">
+          <h4>Social</h4>
+          
+          <p>
+            <a href="#"
+              ><i class="fab fa-twitter"  class="hover"></i> Twitter</a
+            >
+          </p>
+          
+          <p>
+            <a href="https://www.facebook.com/codewithfaraz" class="hover"
+              ><i class="fab fa-facebook"></i> Facebook</a
+            >
+          </p>
+          <p>
+            <a href="https://www.instagram.com/codewithfaraz"  class="hover"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+          </p>
+        </div>
+        <div class="links">
+          <h4>Quick links</h4>
+          <p><a href="#"  class="hover">Home</a></p>
+          <p><a href="#"  class="hover">About</a></p>
+          <p><a href=""  class="hover">Contact</a></p>
+        </div>
+        <div class="details">
+          <h4 class="address">Address</h4>
+          <p>yeshwantrao chavan college of engineering,wanadongri ,Nagpur </p>
+          <h4 class="mobile">Mobile</h4>
+          <p><a href="#">8390290379</a></p>
+          <h4 class="mail"  class="hover">skyhigh360@gmail.com</h4>
+        </div>
+      </div>
+      <footer>
+        <hr />
+        © 2023 Sky High.
+      </footer>
+    </div>
+
+</body>
+</html>

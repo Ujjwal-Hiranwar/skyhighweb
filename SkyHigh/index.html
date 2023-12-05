@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Navigation.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <h1 id="skyhigh">SKYHIGH</h1>
+  <ul class="nav-bar">
+    <li class="lis" id="home"><a href="/index.html" class="anchor">Home</a></li>
+    <li class="lis" id="destination">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Destinations
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="/locations/india.html">India</a></li>
+          <li><a class="dropdown-item" href="/locations/Sri lanka.html">Sri lanka</a></li>
+          <li><a class="dropdown-item" href="/locations/nepal.html">Nepal</a></li>
+          <li><a class="dropdown-item" href="/locations/maldives.html">Maldives</a></li>
+          <li><a class="dropdown-item" href="/locations/indonesia.html">Indonesia</a></li>
+          <li><a class="dropdown-item" href="/locations/malasia.html">Malasia</a></li>
+        </ul>
+      </div></a>
+    </li>
+    <li class="lis" id="contact"><a href="/Contact-Us/Contact-Us.html" class="anchor">Contact</a></li>
+    <li class="lis" id="services"><a href="/locations/services.html" class="anchor">Services</a></li>
+    <li class="lis" id="about"><a href="/about/about.html" class="anchor">About us</a></li>
+    <li class="lis" id="loginform"><a href="/loginform.html" class="anchor">Login</a></li>
+
+    <li class="lis"><a href="#" class="anchor">
+        <div class="search-container">
+          <form action="/">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </a></li>
+  </ul>
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/India slider.jpg.png" style="height:700px;"
+          class="d-block w-100" alt="..." class="slidr">
+       
+      </div>
+      <div class="carousel-item">
+        <img src="/sri.png" style="height: 700px;" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/nepal.png" style="height: 700px;" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/malaysia.png" style="height: 700px;" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/maldives.png" style="height: 700px;" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/indonesia.png" style="height: 700px;" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <hr>
+  <div class="cards-heading">
+    <h1>Our Popular Destinations</h1>
+  </div>
+  <hr>
+  <div class="country-cards">
+    <div class="card" style="width: 18rem;">
+      <img src="/Maldives Sunset.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Maldives</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+          More Info
+        </button>
+        
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Maldives Page</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+             This is Maldives Page
+            </div>
+          </div>
+        </div>
+       <a href="/locations/maldives.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+         Himanshu Page
+        </button></a> 
+
+       
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="/Wat Arun, o templo do Amanhecer em Bangkok - Vou na Janela.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Sri lanka</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">More Info</button>
+
+          <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasTopLabel">Sri Lanka The country of Ravan</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+             This is Sri lanka Page
+            </div>
+          </div>
+        <a href="/locations/Sri lanka.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Visit page
+        </button></a>
+       
+    
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="/Java, Indonesia - credits_ Erfan Pranantiyo [1920x1080].jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Malasia</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <!-- Button trigger modal -->
+<!-- Button trigger modal -->
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">More Info</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Malasia</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    The country of Malasia
+  </div>
+</div>
+<a href="/locations/malasia.html"></a><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Visit Page
+ </button>
+
+<!-- Modal -->
+
+      </div>
+    </div>
+
+  </div>
+  <div class="country-cards">
+    <div class="card" style="width: 18rem;">
+      <img src="/How to Travel from Delhi to Agra by Train, Bus, and Car.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">India</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">More Info</button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">This is India page</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+          </div>
+        </div>
+      <a href="/locations/india.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Visit page
+      </button></a>
+      </div>
+    </div>
+
+    <!-- Nepal card -->
+    <div class="card" style="width: 18rem;">
+      <img src="/Wat Arun, o templo do Amanhecer em Bangkok - Vou na Janela.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Nepal</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  More Info
+</button>
+<a href="/locations/nepal.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ Visit Page
+</button></a>
+
+<!-- Modal -->
+
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img
+        src="/What Kind of the 5 Seekers Are You_ Truth, Goodness, Pleasure, Relationship or Spirituality_ And What Gets You There_.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Indonesia</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">More Info</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>This is Indonesia Page.</p>
+  </div>
+</div>
+          <a href="/locations/indonesia.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Visit page
+          </button></a>
+
+        <!-- Modal -->
+       
+      </div>
+    </div>
+  </div>
+
+  <!-- booking -->
+  <hr>
+  <h1 id="book-heading">Booking Section</h1>
+  <hr>
+  <div id="form-container">
+    <form action="" id="form-text">
+      <div class="inputBox">
+        <h3>Where To :-</h3>
+        <input type="text" placeholder="place name" class="input" />
+      </div>
+      <div class="inputBox">
+        <h3>How Many :-</h3>
+        <input type="number" placeholder="number of guests" class="input" />
+      </div>
+      <div class="inputBox">
+        <h3>Arrivals :-</h3>
+        <input type="date" class="input" />
+      </div>
+      <div class="inputBox">
+        <h3>Leaving :-</h3>
+        <input type="date" class="input" />
+      </div>
+
+
+      <!-- Button trigger modal -->
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="bookbutton">
+  Book My Tickit
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Congratulations!!!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         Thank you for booking !!! Further Details will Provided via E-Mail 🥳🎉👏🤝👍🌷
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Congratulations!!!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Your tickit has been booked extra info will be send via email !!! 🥳🎉👏🤝👍🌷
+            </div>
+            <div class="modal-footer">
+              <a><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></a>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </form>
+  </div>
+  </div>
+  </section>
+  <!-- facilities section -->
+  <div class="footer">
+    <div class="heading">
+      <h2>Sky High<sup>™</sup></h2>
+    </div>
+    <div class="content">
+      <div class="services">
+        <h4>Services</h4>
+        <p><a href="#" class="hover">transportation</a></p>
+        <p><a href="#" class="hover">health care</a></p>indonesia.html
+        <p><a href="#" class="hover">hotels</a></p>
+        <p><a href="#" class="hover">food and drinks</a></p>
+        <p><a href="#" class="hover">guide</a></p>
+        <p><a href="#" class="hover">Travel</a></p>
+        <p><a href="#" class="hover">Adventures</a></p>
+      </div>
+      <div class="social-media">
+        <h4>Social</h4>
+
+        <p>
+          <a href="#"><i class="fab fa-twitter" class="hover"></i> Twitter</a>
+        </p>
+
+        <p>
+          <a href="https://www.facebook.com/codewithfaraz" class="hover"><i class="fab fa-facebook"></i> Facebook</a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/codewithfaraz" class="hover"><i class="fab fa-instagram"></i> Instagram</a>
+        </p>
+      </div>
+      <div class="links">
+        <h4>Quick links</h4>
+        <p><a href="#" class="hover">Home</a></p>
+        <p><a href="#" class="hover">About</a></p>
+        <p><a href="" class="hover">Contact</a></p>
+      </div>
+      <div class="details">
+        <h4 class="address">Address</h4>
+        <p>yeshwantrao chavan college of engineering,wanadongri ,Nagpur </p>
+        <h4 class="mobile">Mobile</h4>
+        <p><a href="#">8390290379</a></p>
+        <h4 class="mail" class="hover">skyhigh360@gmail.com</h4>
+      </div>
+    </div>
+    <footer>
+      <hr />
+      © 2023 Sky High.
+    </footer>
+  </div>
+  <script src="Navigation.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<script>
+  const navlink = document.querySelectorAll(".lis")
+  navlink.forEach(navlink => {
+
+    navlink.addEventListener('click', () => {
+      console.log("Query fiered")
+      document.querySelector('.underline')?.classList.remove('underline');
+      navlink.classList.add('underline');
+    })
+  });
+</script>
+
+</html>
